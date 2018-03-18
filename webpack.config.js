@@ -5,7 +5,7 @@ const dist = path.join(__dirname, '/public/dist');
 
 module.exports =  {
     mode: 'development',
-    entry:  src + '/index.jsx',
+    entry:  src + '/index.js',
 
     output: {
         path: dist,
@@ -20,7 +20,7 @@ module.exports =  {
                     {
                         loader: 'babel-loader',
                         options: {
-                                presets: ['react']
+                                presets: ['env', 'react', 'es2015']
                         },
                     }
                 ]
